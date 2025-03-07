@@ -1,0 +1,226 @@
+#menu1{
+    text-decoration:double;
+    font-weight:500;
+    margin-right: 10px;
+    border: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    text-align:center;
+    border-color: rgb(252, 208, 136);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+    font-family: 'Do0rness';
+    border-style: solid;}
+#menu1:hover{
+    font-size: 20px;
+    }
+#menu2{
+    text-decoration:double;
+    font-weight:500;
+    margin-right: 10px;
+    border: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    text-align:center;
+    border-color: rgb(252, 208, 136);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+    font-family: 'Do0rness';
+    border-style: solid;}
+    #menu2:hover{
+        font-size: 20px;
+        }
+#menu3{
+    text-decoration:double;
+    font-weight:500;
+    margin-right: 10px;
+    border: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    text-align:center;
+    border-color: rgb(252, 208, 136);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+    font-family: 'Do0rness';
+    border-style: solid;}
+    #menu3:hover{
+        font-size: 20px;
+        }
+#menu4{
+    text-decoration:double;
+    font-weight: 500;
+    margin-right: 10px;
+    border: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    text-align:center;
+    border-color: rgb(252, 208, 136);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+    font-family: 'Do0rness';
+    border-style: solid;}
+    #menu4:hover{
+        font-size: 20px;
+        }
+#men{
+    margin-top: 20px;
+    height: 42px;
+    width: 700px;
+    border: 5px;
+    border-top-color:rgba(250, 235, 215, 0);
+    border-left-color:rgba(250, 235, 215, 0);
+    border-right-color:rgba(250, 235, 215, 0);
+    border-bottom-color: rgb(252, 208, 136);
+    transition: all 0.5s;
+    border-style: solid;}
+#men:hover{
+    width: 750px;
+}
+#discord{
+position: absolute;
+margin-left: 20px;
+margin-top: 35px;
+width: 40px;
+transition: all 0.5s;
+height: 30px;}
+#discord:hover{
+    height: 40px;
+    width: 50px;
+}
+#youtube{
+position: absolute;
+margin-left: 70px;
+margin-top: 20px;
+width: 60px;
+height: 60px;
+transition: all 0.5s;}
+#youtube:hover{
+    height: 70px;
+    width: 70px;
+}
+#sayfa{
+position: absolute;
+margin-left: 130px;
+margin-top: 30px;
+width: 40px;
+height: 40px;
+transition: all 0.5s;}
+#sayfa:hover{
+    height: 50px;
+    width: 50px;
+}
+#kocamenu{
+border-bottom-color: rgb(252, 208, 136);
+padding-top: 10px;
+border-style: inset;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+padding-bottom: 10px;
+margin-top: -15px;
+margin-left: -8px;
+margin-right: -8px;
+transition: all 0.5s;
+background-color: rgba(50, 50, 50, 0.494);}
+#kocamenu:hover{
+    padding-top: 20px;
+}
+#paradors{
+    color: rgb(252, 208, 136);
+    margin-top: 15px;
+    font-size: 70px;
+    text-align: center;
+    transition: all 0.5s;
+    font-family: 'Do0rness';}
+#paradors:hover{
+    font-size: 80px;
+    }
+      #Wiki{
+            text-align: center;
+            font-family: 'Do0rness';
+            margin-top: -53px;
+            font-size: 20px;
+            transition: all 0.5s;
+            color: rgb(252, 208, 136);}
+#Wiki:hover{
+
+    font-size: 30px;
+}
+      #ver{
+        
+        text-align: center;
+        margin-left: 110px;
+        margin-top: -27px;
+        color: rgb(252, 208, 136);
+        font-family: 'Do0rness';
+        transition: all 0.5s;
+        font-size: 15px;}
+#ver:hover{
+    margin-left: 135px;
+    font-size: 20px;
+}
+#arkaplan{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-repeat: no-repeat;
+    width: 3000px;
+    height: 1670px;
+    position: fixed;
+    background-image: url("resimler/Screenshot_20230625_190726_YouTube.jpg");
+    background-size: 1700px;
+    background-position-x: center;
+    background-position: center;
+    background-color: black;
+    z-index: -10;}
+    #arkaplan2{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-repeat: no-repeat;
+        width: 1900px;
+        height: 800px;
+        position: fixed;
+        background-image: url("resimler/Screenshot_20230625_190402_YouTube.jpg");
+        background-size: 1400px;
+        background-position-x: center;
+        background-color: black;
+        z-index: -10;}
+    #arkaplan3{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-repeat: no-repeat;
+        width: 1900px;
+        height: 800px;
+        position: fixed;
+        background-image: url("resimler/Screenshot_20230624_211207_Gallery.jpg");
+        background-size: 1800px;
+        background-position-x: center;
+        background-color: black;
+        z-index: -10;}
+    body{
+        background-size: 6000px;
+        background-color: black;
+        background-image: url("resimler/doorsarkaplan4.png");
+    }
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration:double;
+    }

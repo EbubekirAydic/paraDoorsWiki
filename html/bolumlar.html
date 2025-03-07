@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" type="image/png" sizes="192x192"  href="resimler/doorslogo.png">
+        <title>paradors</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="doorsfont.css">
+        <style>
+            #secenekler{
+                background-color: rgba(111, 111, 111, 0.333);
+                margin-left: 32px;
+                border: 4px;
+                border-radius: 10px 0px 0px 10px;
+                border-style:ridge;
+                text-align: center;
+                font-size:18px;
+                position: absolute;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border-color: rgb(252, 208, 136);
+                width: 100px;
+                height: 443px;
+                color: aliceblue;}
+            #secenekler2{
+                border-color: rgba(240, 248, 255, 0);
+                border-style: inset;
+                height: 400px;
+                width: 700px;}
+            #kut{
+                background-color: rgba(111, 111, 111, 0.333);
+                border-color: rgb(252, 208, 136);
+                overflow: hidden;
+                height: 435px;
+                width: 435px;
+                border-radius: 0px 10px 10px 0px;
+                border-style: inset;}
+            #kut1{
+                overflow-y:scroll;
+                height: 400px;}
+            #bolum1{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+                height: 430px;}
+            #kut2{
+                overflow-y:scroll;
+                background-color: rgba(240, 248, 255, 0.157);
+                border-color: rgb(252, 208, 136);
+                margin-left: 15px;
+                margin-bottom: 30px;
+                float:left;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+                border-style: inset;}
+            #bolum2{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+                height: 430px;}
+            #kut3{
+                overflow-y:scroll;
+                background-color: rgba(240, 248, 255, 0.157);
+                border-color: rgb(252, 208, 136);
+                margin-left: 15px;
+                margin-bottom: 30px;
+                float:left;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+                border-style: inset;}
+            #bolum3{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+                height: 430px;}
+            #kut4{
+                overflow-y:scroll;
+                background-color: rgba(240, 248, 255, 0.157);
+                border-color: rgb(252, 208, 136);
+                margin-left: 15px;
+                margin-bottom: 30px;
+                float:left;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+                border-style: inset;}
+            #bolum4{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+                height: 430px;}
+            #kut5{
+                overflow-y:scroll;
+                background-color: rgba(240, 248, 255, 0.157);
+                border-color: rgb(252, 208, 136);
+                margin-left: 15px;
+                margin-bottom: 30px;
+                float:left;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+                border-style: inset;}
+            #bolum5{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+                height: 430px;}
+            #kut6{
+                overflow-y:scroll;
+                background-color: rgba(240, 248, 255, 0.157);
+                border-color: rgb(252, 208, 136);
+                margin-left: 15px;
+                margin-bottom: 30px;
+                float:left;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+                border-style: inset;}
+            #bolum6{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+              transition: all 0.5s;
+                height: 430px;}
+            #kut7{
+                overflow-y:scroll;
+                background-color: rgba(240, 248, 255, 0.157);
+                border-color: rgb(252, 208, 136);
+                margin-left: 15px;
+                margin-bottom: 30px;
+                float:left;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+                border-style: inset;}
+            #bolum7{
+                border-color:rgba(240, 248, 255, 0);
+                border-style: inset;
+                width: 400px;
+              transition: all 0.5s;
+                height: 430px;}
+            #baslık{
+                font-family: 'Do0rness';
+                z-index: -1;
+                border:3px;
+                margin-top: -3px;
+                color: aliceblue;
+                 border-radius: 0px 0px 10px 10px;
+                 border-style: solid;
+                 width: 200px;
+                 transition: all 0.5s;
+                 background-color: rgb(0, 0, 0);
+            border-color: rgb(252, 208, 136);}
+            #baslık:hover{
+                padding-top: 10px;
+            }
+            h2{
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;}
+                a{
+                text-decoration:double;
+                color: rgb(255, 255, 255);}
+            p{
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;}
+            h1{
+                color: rgb(255, 255, 255);
+                transition: all 0.5s;
+                font-family: 'Do0rness';}
+            h1:hover{
+                font-size: 35px;
+            }
+            td{
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;}
+
+            li{
+                color: rgb(255, 255, 255);}
+                
+            td{
+              border-width: 4px;
+              border-radius: 10px;
+              transition: all 0.5s;}
+            td:hover{
+              font-size: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="arkaplan">e</div>
+        <div id="kocamenu">
+            <a href="https://discord.gg/r3ytbk55RJ"><img src="resimler/discordlogo-removebg-preview.png" id="discord"></a>
+            <a href="https://www.youtube.com/channel/UCY67q2uNSYIrDsgHNihVzWg"><img src="resimler/discordyeni-removebg-preview.png" id="youtube"></a>
+            <a href="paradors.html"><img src="resimler/Site-logo-removebg-preview.png" id="sayfa"></a>
+
+            <h1 id="paradors";><a style="color: rgb(252, 208, 136);" href="ANAMENU.html">PARADOORS</a></h1>
+            <h1 id="Wiki">Wiki</h1> <p id="ver"><a style="color: rgb(252, 208, 136);" href="versiyonlar.html">2.0 version</a></p>
+            </div id="kocamenu">
+        <center>
+            <div id="men">
+            <h3><a id="menu1" href="hakkında.html">oyun hakkında</a>
+                <a id="menu2" href="karakterler.html">karakterler</a>
+                <a id="menu3" href="esyalar.html">eşyalar</a>
+                <a id="menu4" href="bolumlar.html">bölümler</a>
+                <a id="menu4" href="basarımlar.html">başarimlar</a>
+                <a id="menu4" href="katlar.html">katlar</a></h3>
+            </div>
+
+        <h2 id="baslık">BÖLÜMLER</h2>
+
+
+        
+        <div id="secenekler2">
+            
+        <table id="secenekler">
+            <tr><td><a href="#bolum1">BÖLÜM 1</a></td></tr>
+            <tr><td><a href="#bolum2">BÖLÜM 2</a></td></tr>
+            <tr><td><a href="#bolum3">BÖLÜM 3</a></td></tr>
+            <tr><td><a href="#bolum4">BÖLÜM 4</a></td></tr>
+            <tr><td><a href="#bolum5">BÖLÜM 5</a></td></tr>
+            <tr><td><a href="#bolum6">BÖLÜM 6</a></td></tr>
+            <tr><td><a href="#bolum7">BÖLÜM 7</a></td></tr>
+        </table>
+
+
+
+
+        <div id="kut">
+            <div id="kut1">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 1</h1>
+
+
+                <h2>-karakterler-</h2>
+            <li><a href="rush.html">RUSH</a></li>
+            <li><a href="seek.html">SEEK</a></li>
+
+
+                <h2>-bulunan eşyalar-</h2>
+         <p><li><a href="Anahtarlar.html#o001">001. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o013">013. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o020">020. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o022">022. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o026">026. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#koridor">koridor anahtarı</a></li><br>
+            <li><a href="Anahtarlar.html#kuru">kurukafa anahtarı</a></li><br>
+            <li><a href="ID.html#ID1">ID1</a></li><br>
+            <li><a href="ID.html#ID2">ID2</a></li><br>
+            <li><a href="fener.html">fener</a></li><br>
+            <li><a href="merdiven.html">merdiven</a></li><br>
+            <li><a href="harita.html">harita parçası</a></li><br>
+            <li><a href="levye.html">levye</a></li><br>
+            </p>
+                <h2>-kulanılan eşyalar-</h2>
+            <p><li><a href="Anahtarlar.html#o001">001. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o002">002. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o013">013. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o020">020. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o022">022. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#o026">026. oda anahtar</a></li><br>
+            <li><a href="Anahtarlar.html#koridor">koridor anahtarı</a></li><br>
+            <li><a href="ID.html#ID1">ID1</a></li><br>
+            <li><a href="ID.html#ID2">ID2</a></li><br>
+            <li><a href="ID.html#ID9">ID9</a></li><br>
+            <li><a href="merdiven.html">merdiven</a></li><br>
+            <li><a href="harita.html">harita parçası</a></li><br>
+            <li><a href="levye.html">levye</a></li><br>
+            <li><a href="forma.html">ronaldo forması</a></li><br>
+            </p>
+
+
+            </div>
+            <div id="bolum1"></div>
+
+
+            <div id="kut2">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 2</h1>
+
+
+                <h2>-karakterler-</h2>
+                <li><a href="figure.html">FİGURE</a></li>
+                <li><a href="halt.html">HALT</a></li>
+
+
+                <h2>-bulunan eşyalar-</h2>
+                <p><li><a href="Anahtarlar.html#o040">040. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o048">048. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o050">050. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o050">bodrum anahtari</a></li><br>
+                <li><a href="ID.html#ID3">ID3</a></li><br>
+                <li><a href="ID.html#ID4">ID4</a></li><br>
+                <li><a href="ID.html#ID5">ID5</a></li><br>
+                <li><a href="ID.html#ID6">ID6</a></li><br>
+                <li><a href="tahta.html">tahta</a></li><br>
+                <li><a href="harita.html">harita parçası</a></li><br>
+
+
+                <h2>-kulanılan eşyalar-</h2>
+                <p><li><a href="Anahtarlar.html#o040">040. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o048">048. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o050">050. oda anahtar</a></li><br>
+                <li><a href="ID.html#ID3">ID3</a></li><br>
+                <li><a href="ID.html#ID4">ID4</a></li><br>
+                <li><a href="ID.html#ID5">ID5</a></li><br>
+                <li><a href="ID.html#ID6">ID6</a></li><br>
+                <li><a href="tahta.html">tahta</a></li><br>
+
+            </div>
+            <div id="bolum2"></div>
+
+
+
+            <div id="kut3">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 3</h1>
+
+
+                <h2>-karakterler-</h2>
+                <li><a href="h.html">A</a></li>
+                <li><a href="iskelet.html">ISKELET</a></li>
+
+
+                <h2>-bulunan eşyalar-</h2>
+                <p><li><a href="Anahtarlar.html#o002">002. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o059">059. oda anahtar</a></li><br>
+                <li><a href="ID.html#ID7">ID7</a></li><br>
+                <li><a href="ID.html#ID8">ID8</a></li><br>
+                <li><a href="ID.html#ID9">ID9</a></li><br>
+                <li><a href="kemik.html">kemik</a></li><br>
+                <li><a href="harita.html">harita parçası</a></li><br>
+
+
+                <h2>-kulanılan eşyalar-</h2>
+                <p><li><a href="Anahtarlar.html#o059">059. oda anahtar</a></li><br>
+                <li><a href="ID.html#ID7">ID7</a></li><br>
+                <li><a href="ID.html#ID8">ID8</a></li><br>
+                <li><a href="kemik.html">kemik</a></li><br>
+
+            </div>
+            <div id="bolum3"></div>
+
+
+
+            <div id="kut4">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 4</h1>
+
+
+                <h2>-karakterler-</h2>
+                <li><a href="rush.html">RUSH</a></li>
+                <li><a href="dikenler.html">DIKENLER</a></li>
+
+
+                <h2>-bulunan eşyalar-</h2>
+                <p><li><a href="Anahtarlar.html#o071">071. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o079">079. oda anahtar</a></li><br>
+                <li><a href="cicekler.html">çiçekler</a></li><br>
+                <li><a href="tahta.html">tahta</a></li><br>
+                <li><a href="balta.html">balta</a></li><br>
+                <li><a href="pense.html">kerpeten</a></li><br>
+
+
+                <h2>-kulanılan eşyalar-</h2>
+                <p><li><a href="Anahtarlar.html#o071">071. oda anahtar</a></li><br>
+                <li><a href="Anahtarlar.html#o079">079. oda anahtar</a></li><br>
+                <li><a href="cicekler.html">çiçekler</a></li><br>
+                <li><a href="tahta.html">tahta</a></li><br>
+                <li><a href="balta.html">balta</a></li><br>
+
+            </div>
+            <div id="bolum4"></div>
+
+
+
+            <div id="kut5">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 5</h1>
+
+
+                <h2>-karakterler-</h2>
+                <li><a href="figure.html">FİGURE</a></li>
+                <li><a href="a.html">A</a></li>
+
+
+                <h2>-bulunan eşyalar-</h2>
+                <li><a href="sigortalar.html">sigortalar</a></li><br>
+                <li><a href="salter.html">şalter</a></li><br>
+
+
+                <h2>-kulanılan eşyalar-</h2>
+                <li><a href="sigortalar.html">sigortalar</a></li><br>
+                <li><a href="Anahtarlar.html#o001">001. oda anahtar</a></li><br>
+                <li><a href="salter.html">şalter</a></li><br>
+                <li><a href="Anahtarlar.html#kuru">kurukafa anahtarı</a></li><br>
+                <li><a href="pense.html">kerpeten</a></li><br>
+
+            </div>
+            <div id="bolum5"></div>
+
+
+
+            <div id="kut6">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 6</h1>
+
+
+                <h2>-karakterler-</h2>
+                <li><a href="a.html">A</a></li>
+
+
+                <h2>-bulunan eşyalar-</h2>
+                <li><a href="sigortalar.html">sigortalar</a></li><br>
+                <li><a href="Anahtarlar.html#elek">elektirik paneli anahtarı</a></li><br>
+                <li><a href="ID.html#perID">laboratuvar çalışan kartı</a></li><br>
+
+
+                <h2>-kulanılan eşyalar-</h2>
+                <li><a href="sigortalar.html">sigortalar</a></li><br>
+                <li><a href="Anahtarlar.html#elek">elektirik paneli anahtarı</a></li><br>
+                <li><a href="ID.html#perID">laboratuvar çalışan kartı</a></li><br>
+
+            </div>
+            <div id="bolum6"></div>
+
+
+
+            <div id="kut7">
+                <h1 style="
+                padding-top: 5px;
+                background-color: rgb(44, 44, 44);
+                width: 120px;
+                border-radius: 10px;
+                border-color: rgb(252, 208, 136);
+                border-style: inset;">BÖLÜM 7</h1>
+
+
+                <h2>-karakterler-</h2>
+                <li><a href="figure.html">FİGURE</a></li>
+                <li><a href="rush.html">RUSH</a></li>
+                <li><a href="seek.html">SEEK</a></li>
+                <li><a href="a.html">A</a></li>
+
+            </div>
+            <div id="bolum7"></div>
+
+
+        </div>
+    </div>
+</center>
+    </body>
+</html>

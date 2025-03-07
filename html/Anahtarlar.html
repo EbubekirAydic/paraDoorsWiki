@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" type="image/png" sizes="192x192"  href="resimler/doorslogo.png">
+        <title>paradors</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="doorsfont.css">
+        <style>
+            #kutu{
+                border-style: inset;
+                margin-top: 10px;
+                height: 510px;
+                overflow-x: hidden;
+                width: 600px;
+                height: auto;
+                border-radius: 10px;
+                border-width: 4px;
+                border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0.157);}
+            #kutu2{
+                border-style:solid;
+                overflow: hidden;
+                border-color: rgb(252, 208, 136);
+                margin-top: 0px;
+                height: 260px;
+                width: 420px;
+                border-radius: 10px;
+                border-width: 4px;
+                transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0);}
+            #kutu2:hover{
+                height:auto;
+                background-color: rgba(255, 255, 255, 0.096);
+            }
+            #kutu3{
+                border-style:solid;
+                overflow: hidden;
+                border-color: rgb(252, 208, 136);
+                margin-top: 0px;
+                height: 260px;
+                width: 420px;
+                border-radius: 10px;
+                border-width: 4px;
+                transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0);}
+            #kutu3:hover{
+                height:auto;
+                background-color: rgba(255, 255, 255, 0.096);
+            }
+            #kutu4{
+                border-style:solid;
+                overflow: hidden;
+                border-color: rgb(252, 208, 136);
+                margin-top: 0px;
+                height: 260px;
+                width: 420px;
+                border-radius: 10px;
+                border-width: 4px;
+                transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0);}
+            #kutu4:hover{
+                height:auto;
+                background-color: rgba(255, 255, 255, 0.096);
+            }
+            #kutu5{
+                border-style:solid;
+                overflow: hidden;
+                border-color: rgb(252, 208, 136);
+                margin-top: 0px;
+                height: 260px;
+                width: 420px;
+                border-radius: 10px;
+                border-width: 4px;
+                transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0);}
+            #kutu5:hover{
+                height:auto;
+                background-color: rgba(255, 255, 255, 0.096);
+            }
+            #baslık{
+             margin-top: 50px;
+             font-size: 30px;
+             border-style: inset;
+             width: 250px;
+             background-color: rgb(78, 78, 78);
+             border-radius: 5px;
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+             font-family: 'Do0rness';}
+             #baslık:hover{
+                margin-top: 40px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+             }
+            #anahtar{
+             border-style: inset;
+             width: 130px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+             border-radius: 10px;}
+             #anahtar:hover{
+                font-size: 20px;
+                width: 160px;
+             }
+            #resim{
+                width: 200px;
+                height: 200px;
+                transition: all 0.5s;
+            }
+            #resim:hover{
+                width: 160px;
+                height: 160px;
+            }
+            #bodrum{
+             border-style: inset;
+             width:200px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+             border-radius: 10px;}
+             #bodrum:hover{
+                font-size: 20px;
+                width: 230px;
+            }
+            #koridor{
+             border-style: inset;
+             width: 200px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+             border-radius: 10px;}
+             #koridor:hover{
+                font-size: 20px;
+                width: 230px;
+            }
+            #kuru{
+             border-style: inset;
+             width: 230px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+             border-radius: 10px;}
+             #kuru:hover{
+                font-size: 20px;
+                width: 260px;
+            }
+            #elek{
+             border-style: inset;
+             width: 230px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+                font-size: 20px;
+             border-radius: 10px;}
+             #elek:hover{
+                font-size: 17px;
+                width: 210px;
+            }
+            #tablo{
+                text-decoration:double;
+                margin-left: -2px;
+                margin-top: -110px;
+                border-radius:10px 10px 0px 0px;
+                border-style:inset;
+                text-align: center;
+                font-size:21px;
+                position: absolute;
+                border-color: rgb(252, 208, 136);
+                background-color: rgba(48, 48, 48, 0);
+             font-family: 'Do0rness';
+                width: 604px;
+                height: 30px;
+                color: aliceblue;}
+            td{
+                transition: all 0.5s;
+            }
+            td:hover{
+                font-size: 20px;
+                background-color: rgba(0, 0, 0, 0.325);
+            }
+            #tablo2{
+                text-align: center;
+                font-size:15px;
+                background-color: rgb(48, 48, 48);
+                border-color: rgb(252, 208, 136);
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                width: 200px;
+                height: 20px;
+                color: aliceblue;}
+            #o001{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o001:hover{
+                height: 200px;
+            }
+            #o002{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o002:hover{
+                height: 200px;
+            }
+            #o013{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o013:hover{
+                height: 200px;
+            }
+            #o020{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o020:hover{
+                height: 200px;
+            }
+            #o022{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o022:hover{
+                height: 200px;
+            }
+            #o026{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o026:hover{
+                height: 200px;
+            }
+            #o040{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o040:hover{
+                height: 200px;
+            }
+            #o048{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o048:hover{
+                height: 200px;
+            }
+            #o050{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o050:hover{
+                height: 200px;
+            }
+            #o059{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o0059:hover{
+                height: 200px;
+            }
+            #o071{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o071:hover{
+                height: 200px;
+            }
+            #o079{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #o079:hover{
+                height: 200px;
+            }
+            p{
+                color: aliceblue;
+                font-family: 'Courier New', Courier, monospace;}
+            h4{
+             border-style: inset;
+             width: 120px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             font-size: 15px;
+             border-radius: 20px;}
+            a{
+                color: rgb(255, 255, 255);
+                text-decoration:double;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="kocamenu">
+            <a href="https://discord.gg/r3ytbk55RJ"><img src="resimler/discordlogo-removebg-preview.png" id="discord"></a>
+            <a href="https://www.youtube.com/@BiterGames"><img src="resimler/discordyeni-removebg-preview.png" id="youtube"></a>
+            <a href="paradors.html"><img src="resimler/Site-logo-removebg-preview.png" id="sayfa"></a>
+
+            <h1 id="paradors";><a style="color: rgb(252, 208, 136);" href="ANAMENU.html">PARADOORS</a></h1>
+            <h1 id="Wiki">Wiki</h1> <p id="ver"><a style="color: rgb(252, 208, 136);" href="versiyonlar.html">2.0 version</a></p>
+            </div id="kocamenu">
+        
+        <center>
+            <div id="arkaplan">e</div>
+            <div id="men">
+            <h3><a id="menu1" href="hakkında.html">oyun hakkında</a>
+                <a id="menu2" href="karakterler.html">karakterler</a>
+                <a id="menu3" href="esyalar.html">eşyalar</a>
+                <a id="menu4" href="bolumlar.html">bölümler</a>
+                <a id="menu4" href="basarımlar.html">başarimlar</a>
+                <a id="menu4" href="katlar.html">katlar</a></h3>
+            </div>
+            <div id="kutu">
+            
+            
+
+                <h2 id="baslık">ANAHTARLAR</h2>
+                
+                <table border="5" id="tablo">
+                    <tr> <td id="tab1"><a href="#anahtar">Anahtarlar</a></td>
+                         <td id="tab2"><a href="#bodrum">Bodrum anahtarı</a></td>
+                         <td id="tab3"><a href="#koridor">Koridor anahtarı</a></td>
+                         <td id="tab4"><a href="#kuru">Kuru kafa anahtarı</a></td></tr>
+                </table>
+                <br>
+            <div id="kutu2">
+                <h2 id="anahtar">Anahtarlar</h2>
+                <img id="resim" src="resimler/Anahtar-removebg-preview.png"> <br>
+                <p>Anahtarlar oyunda 6. ve 7. bölüm hariç heryerde kullanılır.<br>
+                Anahtarlar 4.bölüme kadar bulunur.</p>
+                <table border="3" id="tablo2">
+                    <tr><td><li><a href="#o001">001</a></li></td></tr>
+                    <tr><td><li><a href="#o002">002</a></li></td></tr>
+                    <tr><td><li><a href="#o013">013</a></li></td></tr> 
+                    <tr><td><li><a href="#o020">020</a></li></td></tr> 
+                    <tr><td><li><a href="#o022">022</a></li></td></tr> 
+                    <tr><td><li><a href="#o026">026</a></li></td></tr> 
+                    <tr><td><li><a href="#o040">040</a></li></td></tr> 
+                    <tr><td><li><a href="#o048">048</a></li></td></tr> 
+                    <tr><td><li><a href="#o050">050</a></li></td></tr> 
+                    <tr><td><li><a href="#o059">059</a></li></td></tr> 
+                    <tr><td><li><a href="#o071">071</a></li></td></tr> 
+                    <tr><td><li><a href="#o079">079</a></li></td></tr> 
+           </table>
+        <div id="o001">
+           <h4>001. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta danşıma yerinde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>001.odayı açar ve -2.katta 001.kapıyı açar.</p>
+        </div>
+        <div id="o002">
+           <h4>002. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>3.katta köprüde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>002.odayı açar.</p>
+        </div>
+        <div id="o013">
+           <h4>013. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta rastgele odalarda bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>013.odayı açar.</p>
+        </div>
+        <div id="o020">
+           <h4>020. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta bahçede bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>020.odayı açar.</p>
+        </div>
+        <div id="o022">
+           <h4>022. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta renk bulmacası çözüldüğünde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>022.odayı açar.</p>
+        </div>
+        <div id="o026">
+           <h4>026. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta rastgele yerlerde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>026.odayı açar.</p>
+        </div>
+        <div id="o040">
+           <h4>040. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta 4 düğmeyi açtıktan sonra 34.odada gizli geçitte bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>040.odayı açar.</p>
+        </div>
+        <div id="o048">
+           <h4>048. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta ID3'ü açtıktan sonra rastgele yerlerde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>048.odayı açar.</p>
+        </div>
+        <div id="o050">
+           <h4>050. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta 40.odada bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>050.odayı açar.</p>
+        </div>
+        <div id="o059">
+           <h4>059. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>3.katta ID7'yi açtıktan sonra rastgele yerde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>059.odayı açar.</p>
+        </div>
+        <div id="o071">
+           <h4>071. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>4.katta rastgele yerlerde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>071.odayı açar.</p>
+        </div>
+        <div id="o079">
+           <h4>079. anahtar</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>4.katta rastgele yerlerde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>079.odayı açar.</p>
+        </div>
+
+    </div>
+    
+                <div id="kutu3">
+                <h2 id="bodrum">Bodrum anahtarı</h2>
+                <img id="resim" src="resimler/anahtar.png">
+                <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+                <p><a style="color: rgb(136, 200, 255);" href="bolumlar.html#bolum2">2.katta</a> demirparmaklıkların önünde bulunur.</p>
+                <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+                <p>bodrumun kapısını açar.</p>
+            </div>
+                 
+                <div id="kutu4">
+                <h2 id="koridor">Koridor anahtarı</h2>
+                <img id="resim" src="resimler/Electrical_Room_Key .png">
+                <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+                <p>5.odada bulunur</p>
+                <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+                <p>giriş kapısından (oyunun başladığı yerden) soldan koridorda ilerledikten sonra karşına çıkan koridor kapısını açar.</p>
+            </div>
+                
+                <div id="kutu5"> 
+                <h2 id="kuru">Kuru kafa anahtarı</h2>
+                <img id="resim" src="resimler/kurukafa_anahtaı-removebg-preview.png">
+                <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+                <p>1.katta <a style="color: rgb(136, 200, 255);" href="ID.html#ID9">ID9</a> yazılı kapıyı açtıktan sonra masada bulunur</p>
+                <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+                <p>99.kapıyı açar.</p>
+            </div>
+                
+            <div id="kutu5"> 
+            <h2 id="elek">Elektrik paneli anahtari</h2>
+            <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+            <p>-100.katta rastgele yerlerde bulunur</p>
+            <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+            <p>elektrik panelini açar</p>
+        </div>
+
+
+
+            </div>
+        </center>
+    </body>
+</html>

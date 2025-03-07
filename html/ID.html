@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" type="image/png" sizes="192x192"  href="resimler/doorslogo.png">
+        <title>paradors</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="doorsfont.css">
+        <style>
+            #kutu{
+                border-style: inset;
+                margin-top: 10px;
+                height: 510px;
+                overflow-x: hidden;
+                width: 600px;
+                height: auto;
+                border-radius: 10px;
+                border-width: 4px;
+                border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0.157);}
+            #kutu2{
+                border-style:solid;
+                overflow: hidden;
+                border-color: rgb(252, 208, 136);
+                margin-top: 0px;
+                width: 420px;
+                height:auto;
+                border-radius: 10px;
+                border-width: 4px;
+                transition: all 0.5s;
+                background-color: rgba(240, 248, 255, 0);}
+            #kutu2:hover{
+                background-color: rgba(255, 255, 255, 0.096);
+            }
+            #baslık{
+             margin-top: 20px;
+             font-size: 30px;
+             border-style: inset;
+             width: 250px;
+             background-color: rgb(78, 78, 78);
+             border-radius: 5px;
+             color: rgb(255, 255, 255);
+             border-color: rgb(252, 208, 136);
+             transition: all 0.5s;
+             font-family: 'Do0rness';}
+             #baslık:hover{
+                margin-top: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+             }
+            #resim{
+                width: 200px;
+                height: 200px;
+                transition: all 0.5s;
+            }
+            #resim:hover{
+                width: 160px;
+                height: 160px;
+            }
+            td{
+                transition: all 0.5s;
+            }
+            td:hover{
+                font-size: 20px;
+                background-color: rgba(0, 0, 0, 0.325);
+            }
+            #tablo2{
+                text-align: center;
+                font-size:15px;
+                background-color: rgb(48, 48, 48);
+                border-color: rgb(252, 208, 136);
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                width: 200px;
+                height: 20px;
+                color: aliceblue;}
+            #ID1{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID1:hover{
+                height: 210px;
+            }
+            #ID2{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID2:hover{
+                height: 210px;
+            }
+            #ID3{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID3:hover{
+                height: 210px;
+            }
+            #ID4{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID4:hover{
+                height: 230px;
+            }
+            #ID5{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID5:hover{
+                height: 230px;
+            }
+            #ID6{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID6:hover{
+                height: 230px;
+            }
+            #ID7{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID7:hover{
+                height: 210px;
+            }
+            #ID8{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID8:hover{
+                height: 210px;
+            }
+            #ID9{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #ID9:hover{
+                height: 230px;
+            }
+            #perID{
+             border-style: inset;
+             height: 60px;
+             overflow: hidden;
+             background-color: rgba(116, 116, 116, 0.309);
+             color: rgb(0, 0, 0);
+             width: 420px;
+             transition: all 0.5s;
+             border-radius: 20px;}
+            #perID:hover{
+                height: 250px;
+            }
+            p{
+                color: aliceblue;
+                font-family: 'Courier New', Courier, monospace;}
+            h4{
+             border-style: inset;
+             width: 120px;
+             background-color: rgb(116, 116, 116);
+             color: rgb(255, 255, 255);
+             font-size: 15px;
+             border-radius: 20px;}
+            a{
+                color: rgb(255, 255, 255);
+                text-decoration:double;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="kocamenu">
+            <a href="https://discord.gg/r3ytbk55RJ"><img src="resimler/discordlogo-removebg-preview.png" id="discord"></a>
+            <a href="https://www.youtube.com/channel/UCY67q2uNSYIrDsgHNihVzWg"><img src="resimler/discordyeni-removebg-preview.png" id="youtube"></a>
+            <a href="paradors.html"><img src="resimler/Site-logo-removebg-preview.png" id="sayfa"></a>
+
+            <h1 id="paradors";><a style="color: rgb(252, 208, 136);" href="ANAMENU.html">PARADOORS</a></h1>
+            <h1 id="Wiki">Wiki</h1> <p id="ver"><a style="color: rgb(252, 208, 136);" href="versiyonlar.html">2.0 version</a></p>
+            </div id="kocamenu">
+        
+        <center>
+            <div id="arkaplan">e</div>
+            <div id="men">
+            <h3><a id="menu1" href="hakkında.html">oyun hakkında</a>
+                <a id="menu2" href="karakterler.html">karakterler</a>
+                <a id="menu3" href="esyalar.html">eşyalar</a>
+                <a id="menu4" href="bolumlar.html">bölümler</a>
+                <a id="menu4" href="basarımlar.html">başarimlar</a>
+                <a id="menu4" href="katlar.html">katlar</a></h3>
+            </div>
+            <div id="kutu">
+
+                <h2 id="baslık">ID Kartlar</h2>
+
+            <div id="kutu2">
+                <img id="resim" src="resimler/ID-removebg-preview.png"> <br>
+                <p>ID kartlar oyunda 5. ve 7. bölüm hariç heryerde kullanılır.<br>
+                ID kartlar 1,2,3 4,6.bölümelerde bulunur.</p>
+                <table border="3" id="tablo2">
+                    <tr><td><li><a href="#ID1">ID 1</a></li></td></tr>
+                    <tr><td><li><a href="#ID2">ID 2</a></li></td></tr>
+                    <tr><td><li><a href="#ID3">ID 3</a></li></td></tr> 
+                    <tr><td><li><a href="#ID4">ID 4</a></li></td></tr> 
+                    <tr><td><li><a href="#ID5">ID 5</a></li></td></tr> 
+                    <tr><td><li><a href="#ID6">ID 6</a></li></td></tr> 
+                    <tr><td><li><a href="#ID7">ID 7</a></li></td></tr> 
+                    <tr><td><li><a href="#ID8">ID 8</a></li></td></tr> 
+                    <tr><td><li><a href="#ID9">ID 9</a></li></td></tr> 
+                    <tr><td><li><a href="#perID">laboratuvar görevli kartı</a></li></td></tr> 
+           </table>
+        <div id="ID1">
+           <h4>ID 1</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta 13.odada bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>1.katta ID 1 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID2">
+           <h4>ID 2</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>1.katta 26.odada bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>1.katta ID 2 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID3">
+           <h4>ID 3</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta köprüde bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>2.katta ID 3 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID4">
+           <h4>ID 4</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta ID 3 kapısını açtıktan sonra rastgele bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>2.katta ID 4 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID5">
+           <h4>ID 5</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta ID 4 kapısını açtıktan sonra rastgele bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>2.katta ID 5 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID6">
+           <h4>ID 6</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>2.katta ok bulmacasını çözdükten sonra açılan odada bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>2.katta ID 6 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID7">
+           <h4>ID 7</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>3.katta iskelet marketinde 3kemiğe satılır.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>3.katta ID 7 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID8">
+           <h4>ID 8</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>3.katta iskelet marketinde 2kemiğe satılır.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>3.katta ID 8 yazılı kapıyı açar.</p>
+        </div>
+        <div id="ID9">
+           <h4>ID 9</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>3.katta iskelet marketinde kurukafa kemiğine satılır.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>1.katta ID 9 yazılı kapıyı açar.</p>
+        </div>
+        <div id="perID">
+           <h4>laboratuvar çalışan kartı</h4>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-bulunduğu yer-</h3>
+           <p>-100.katta yerder yatan iskelette bulunur.</p>
+           <h3 style=" color: aliceblue; font-family: 'Courier New', Courier, monospace;">-kullanıldığı alan-</h3>
+           <p>-100.katta tüm bulmacalara erişime izin verir.</p>
+        </div>
+        
+                
+            </div>
+        </center>
+    </body>
+</html>
